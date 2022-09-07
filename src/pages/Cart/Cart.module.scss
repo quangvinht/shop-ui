@@ -14,10 +14,10 @@
         margin: 100px 0;
     }
     @include tablet {
-        padding: 50px 25%;
+        padding: 50px 5%;
     }
     @include mobile {
-        padding: 20px 30%;
+        padding: 20px 5%;
     }
 }
 .image {
@@ -25,14 +25,14 @@
     height: 25%;
     object-fit: cover;
     object-position: center;
-    margin-right: 40%;
+    margin-right: 10%;
     @include tablet {
-        width: 50%;
-        height: 50%;
+        width: 20%;
+        height: 20%;
     }
     @include mobile {
-        width: 60%;
-        height: 60%;
+        width: 20%;
+        height: 20%;
     }
 }
 .cart-infor {

@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import classNames from 'classnames/bind';
 import styles from './Products.module.scss';
 import PropTypes from 'prop-types';
-import storeApi from '@/api/data';
 import * as productsService from '@/services/productsService';
 import * as productsCategoriesService from '@/services/productsCategoriesService';
 
