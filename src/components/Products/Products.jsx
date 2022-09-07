@@ -94,21 +94,20 @@ function Products({ children }) {
                 })}
             </div>
             <div className={cx('product-cards')}>
-                {Array.isArray(products) &&
-                    products.map((itemProduct, i) => {
-                        return loading ? (
-                            <Skeleton
-                                key={i}
-                                lineHeight={2}
-                                padding="1rem"
-                                count={5.5}
-                                borderRadius={1}
-                                highlightColor={'#333'}
-                            />
-                        ) : (
-                            <CardProduct item={itemProduct} key={itemProduct.id} />
-                        );
-                    })}
+                {products.map((itemProduct, i) => {
+                    return loading ? (
+                        <Skeleton
+                            key={i}
+                            lineHeight={2}
+                            padding="1rem"
+                            count={5.5}
+                            borderRadius={1}
+                            highlightColor={'#333'}
+                        />
+                    ) : (
+                        <CardProduct item={itemProduct} key={itemProduct.id} />
+                    );
+                })}
             </div>
         </div>
     );
