@@ -94,7 +94,7 @@ function Products({ children }) {
                 })}
             </div>
             <div className={cx('product-cards')}>
-                {products.map((item, i) => {
+                {products.map((itemProduct, i) => {
                     return loading ? (
                         <Skeleton
                             key={i}
@@ -105,7 +105,7 @@ function Products({ children }) {
                             highlightColor={'#333'}
                         />
                     ) : (
-                        <CardProduct item={item} key={item.id} />
+                        <CardProduct item={itemProduct} key={itemProduct.id} />
                     );
                 })}
             </div>
