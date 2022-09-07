@@ -1,0 +1,23 @@
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    justify-content: space-between;
+    box-shadow: 5px 10px 18px #888888;
+}
+.image {
+    height: 300px;
+    object-fit: contain;
+    object-position: center;
+}
+.title {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.button {
+}

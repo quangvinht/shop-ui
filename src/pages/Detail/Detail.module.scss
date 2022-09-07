@@ -1,0 +1,83 @@
+@use '../../components/GlobalStyles/GlobalStyles.module.scss' as *;
+
+.detail {
+    display: flex;
+    margin: 30px 5%;
+    align-items: center;
+
+    @include tablet {
+        flex-direction: column;
+    }
+
+    @include mobile {
+        flex-direction: column;
+    }
+}
+.image {
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    margin-right: 20%;
+
+    @include tablet {
+        margin-right: 0%;
+    }
+    @include mobile {
+        margin-right: 0%;
+    }
+}
+.detail-infor {
+    display: flex;
+    flex-direction: column;
+    & > * {
+        margin: 10px 0;
+    }
+}
+.category {
+    color: #8e8f8e;
+}
+.title {
+    font-weight: 700;
+}
+.rating {
+    font-size: 1rem;
+}
+.price {
+    font-size: 1.6rem;
+}
+.description {
+    font-size: 1rem;
+    color: #5e5e5c;
+}
+.detail-button {
+    @include tablet {
+        align-self: center;
+    }
+    @include mobile {
+        align-self: center;
+    }
+}
+.btn-item {
+    margin-right: 20px;
+    &:nth-child(1) {
+        margin-bottom: 10px;
+    }
+}
+.loading-detail {
+    display: flex;
+    div:nth-child(1) {
+        margin-right: 20%;
+    }
+    @include tablet {
+        flex-direction: column;
+        div:nth-child(1) {
+            margin-right: 0%;
+        }
+    }
+    @include mobile {
+        flex-direction: column;
+        div:nth-child(1) {
+            margin-right: 0%;
+        }
+    }
+}

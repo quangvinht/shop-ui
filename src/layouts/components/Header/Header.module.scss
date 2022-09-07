@@ -1,0 +1,119 @@
+@use '../../../components/GlobalStyles/GlobalStyles.module.scss' as *;
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    padding: 20px 56px;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid rgba(141, 134, 134, 0.5);
+    z-index: 10000;
+    background-color: white;
+    @include tablet {
+        justify-content: space-between;
+    }
+    @include mobile {
+        justify-content: center;
+    }
+}
+.brand {
+    font-weight: 600;
+    font-size: 1.6rem;
+    background-color: white;
+
+    @include mobile {
+    }
+}
+.navbar {
+    display: flex;
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.369);
+    transition: all 0.3s ease;
+    background-color: white;
+
+    @include tablet {
+        margin-left: -16%;
+    }
+
+    @include mobile {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 0%;
+    }
+}
+.navbar-item {
+    margin: 0 10px;
+    &:hover {
+        color: #000;
+    }
+}
+.button {
+    span {
+        margin-left: 2px;
+    }
+
+    .btn-mobile {
+        @include mobile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+
+            top: 90%;
+            transform: translateY(-90%);
+            right: 5px;
+            border: 1px solid #000;
+            border-radius: 50%;
+            width: 30px;
+            padding: 6px;
+            .cart-name {
+                display: none;
+            }
+            .cart-list {
+                display: block;
+            }
+        }
+        @include tablet {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+
+            top: 90%;
+            transform: translateY(-90%);
+            right: 5px;
+            border: 1px solid #000;
+            border-radius: 50%;
+            width: 30px;
+            padding: 6px;
+            .cart-name {
+                display: none;
+            }
+            .cart-list {
+                display: block;
+            }
+        }
+    }
+    // @include tablet {
+    //     display: flex;
+    //     position: absolute;
+    //     top: 50%;
+    //     transform: translateY(-50%);
+    // }
+}
+.btn-item {
+    margin: 0 4px;
+    @include mobile {
+        display: none;
+    }
+    @include tablet {
+        display: none;
+    }
+}

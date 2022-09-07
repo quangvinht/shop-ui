@@ -1,0 +1,41 @@
+@use '../../components/GlobalStyles/GlobalStyles.module.scss' as *;
+
+.home {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.banner {
+    width: 100%;
+    height: 550px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    color: rgb(103, 98, 98);
+    position: relative;
+    @include tablet {
+        background-position: right;
+    }
+    @include mobile {
+        background-position: right;
+    }
+}
+.text {
+    position: absolute;
+    top: 55%;
+    left: 6%;
+    @include tablet {
+        left: 0px;
+    }
+    @include mobile {
+        top: 70%;
+    }
+}
+
+.title {
+    font-size: 3rem;
+}
+.subtitle {
+    font-size: 1.8rem;
+    font-weight: 500;
+}

@@ -1,0 +1,68 @@
+@use '../../components/GlobalStyles/GlobalStyles.module.scss' as *;
+
+.cart {
+    display: flex;
+    flex-direction: column;
+}
+.cart-item {
+    display: flex;
+    align-items: center;
+    padding: 100px 200px;
+    border: 1px solid #ccc;
+    box-shadow: #888888 0px 7px 29px 0px;
+    &:not(:first-child) {
+        margin: 100px 0;
+    }
+    @include tablet {
+        padding: 50px 25%;
+    }
+    @include mobile {
+        padding: 20px 30%;
+    }
+}
+.image {
+    width: 25%;
+    height: 25%;
+    object-fit: cover;
+    object-position: center;
+    margin-right: 40%;
+    @include tablet {
+        width: 50%;
+        height: 50%;
+    }
+    @include mobile {
+        width: 60%;
+        height: 60%;
+    }
+}
+.cart-infor {
+    display: flex;
+    flex-direction: column;
+    & > * {
+        margin: 10px 0;
+    }
+}
+.title {
+    font-size: 2.6rem;
+    font-weight: 700;
+}
+
+.money {
+    font-size: 1.2rem;
+}
+.cart-btn {
+    display: flex;
+}
+.cart-btn-item {
+    font-size: 2rem;
+    &:nth-child(2) {
+        margin-left: 10px;
+    }
+}
+.btn-pay {
+    margin: 20px 30%;
+}
+.cart-empty {
+    align-self: center;
+    font-weight: 700;
+}

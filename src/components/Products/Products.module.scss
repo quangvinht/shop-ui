@@ -1,0 +1,34 @@
+.Product {
+    margin: 100px 40px 100px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+}
+.loading {
+}
+.latest-products {
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    border-bottom: 1px solid #000;
+    padding-bottom: 20px;
+}
+.button-type {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+.button-type-item {
+    margin: 10px 6px;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.product-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 40px;
+}
